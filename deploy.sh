@@ -15,4 +15,4 @@ cp ./dist/* ./docker-nginx/www
 #拷贝nginx配置文件
 cp ./nginx.conf ./docker-nginx/conf.d
 #启动容器
-docker-compose up -d
+docker-compose up -d&
