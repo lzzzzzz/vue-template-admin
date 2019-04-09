@@ -1,0 +1,10 @@
+version: '2.0'
+services:
+  template-nginx-app:
+    image: nginx:latest
+    ports:
+      - "8083:80"
+    volumes:
+      - ./docker-nginx/conf/conf.d:/etc/nginx/conf.d
+      - ./docker-nginx/www:/usr/share/nginx/html
+      - ./docker-nginx/logs:/var/log/nginx
