@@ -1,5 +1,6 @@
+#服务器环境：os:centos7 software:git、nodejs、docker-compose
 #/bin/bash
-#git pull
+git pull git@github.com:lzzzzzz/vue-template-admin.git
 npm install
 npm run build:prod
 docker-compose down template-nginx-app
